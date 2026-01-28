@@ -1,14 +1,9 @@
-:root {
-    
-}
-
 html {
     font-family: Merriweather, Georgia, 'Times New Roman', Times, serif;
     margin: 0px;
 }
 
 body {
-    background: #d890f0;
 background: linear-gradient(285deg,#a161b6 0%, #a800d8 50%, #9000a8 100%);
 color: #f5f5f5;
 }
@@ -21,9 +16,9 @@ header {
     justify-content: space-evenly;
     align-items: center;
     border-bottom: 1px solid;
-    width: 100%;
     margin: 0;
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     background-color: rgba(144, 0, 168, 0.9);
@@ -62,8 +57,8 @@ header {
 
 /*hero section*/
 .hero {
-    height: 80vh;
-    padding-top: 10vh;
+    height: 100vh;
+    padding-top: 5vh;
     text-align: center;
     line-height: 2.2rem;
 }
