@@ -4,7 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev.ADJ | Musings</title>
-    <link rel="stylesheet" href="/css/styles.css">
+   <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+    .welcome {
+        padding-top: 20vh;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 2px solid;
+        width: 67vw;
+        margin: 10px auto;
+    }
+
+    .musing-container {
+        height: 100vh;
+        padding: 20px;
+    }
+
+    #coming-soon {
+        text-align: center;
+        margin: 10px auto;
+        padding: 15px;
+        width: 67vw;
+    }
+</style>
 </head>
 <body>
             <header>
@@ -18,7 +44,7 @@
             <ul>
                 <li><a class="nav-link" href="/index.html">Home</a></li>
                 <li><a class="nav-link" href="/pages/log/log.html">Log</a></li>
-                <li><a class="nav-link" href="/pages/projects.html">Projects</a></li>
+                <li><a class="nav-link" href="/pages/projects/projects.html">Projects</a></li>
             </ul>
         </nav>
     <h1 id="top-title-text">Dev.ADJ</h1>
@@ -28,9 +54,21 @@
         <p>A collection of thoughts about things I like, dislike, or just feel like talking about.</p>
     </section>
     <!--Coming Soon Section-->
-    <section class="musing-container" id="coming-soon">
+    <section class="musing-container">
+        <section id="coming-soon">
         <h2>Yap Sessions Coming Soon!</h2>
         <p>Currently working on a project, though. It's super cool, trust me.</p>
+        </section>
     </section>
+    <footer> <!--Footer/Contact-->
+    <p id="copy">&copy; 2026 Dev.ADJ</p>
+    <div class="links">
+        <p>I'm not much of a social media guy, so check these out if you can.</p>
+        <a href="https://github.com/andredudley" target="_blank"><span class="logo fa fa-github fa-2x"></span></a>
+        <a href="https://www.linkedin.com/in/andre-dudley-jr/" target="_blank"><span class="logo fa fa-linkedin"></span></a>    
+    </div>
+    <p id="daily-message">You are Loved &#10014;</p>
+    <script src="/scripts/daily-bread.js"></script>
+   </footer>
 </body>
 </html>

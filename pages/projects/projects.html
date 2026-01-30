@@ -9,6 +9,73 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+    .main-content {
+        padding-top: 0vh;
+    }
+
+    .welcome {
+        text-align: center;
+        margin-bottom: 10vh;
+    }
+
+    .coming-soon-container {
+        margin-bottom: 10vh;
+        border-bottom: 2px solid;
+        padding: 25px;
+    }
+
+    .finished-works-container {
+        margin-bottom: 25vh;
+        border-bottom: 2px solid;
+        padding: 25px;
+    }
+
+    .coming-soon-container h2, .coming-soon-container p:first-of-type {
+        text-align: center;
+    }
+
+    .finished-works-container h2 {
+        text-align: center;
+        border-bottom: 2px solid;
+        padding-bottom: 2vh;
+        padding-top: 20vh;
+    }
+
+    .finished-works-container p, .finished-works-container h3 {
+        text-align: center;
+    }
+
+    .coming-soon-container p:first-of-type {
+        padding-bottom: 2vh;
+        border-bottom: 2px solid;
+        margin-bottom: 5vh;
+    }
+
+    .project-container {
+        border-radius: 4px;
+        padding: 25px;
+        text-align: center;
+        width: 33vw;
+        margin: auto;
+        box-shadow: 0 0 8px;
+        background: linear-gradient(45deg, #a5a5a5, #a161b6);
+        color: #550064;
+    }
+
+    a { 
+        color: #550064
+    }
+
+    a:hover {
+        color: whitesmoke;
+    }
+
+    footer { 
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+</style>
 </head>
 <body>
         <header>
@@ -47,11 +114,21 @@
         </section>
         </section>
         <section class="finished-works-container">
-            <h2>Finised Projects</h2>
-            <section class="coming-soon">
+            <h2>Finished Projects</h2>
+            <section class="tbd">
             <h3>Coming Soon!</h3>
             <p>Just give it time! You can even check the github to view the progress!</p>
             </section>
         </section>
+        <footer> <!--Footer/Contact-->
+    <p id="copy">&copy; 2026 Dev.ADJ</p>
+    <div class="links">
+        <p>I'm not much of a social media guy, so check these out if you can.</p>
+        <a href="https://github.com/andredudley" target="_blank"><span class="logo fa fa-github fa-2x"></span></a>
+        <a href="https://www.linkedin.com/in/andre-dudley-jr/" target="_blank"><span class="logo fa fa-linkedin"></span></a>    
+    </div>
+    <p id="daily-message">You are Loved &#10014;</p>
+    <script src="/scripts/daily-bread.js"></script>
+   </footer>
 </body>
 </html>
