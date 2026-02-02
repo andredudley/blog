@@ -11,55 +11,63 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <style>
-#content {
-    /*font-family: Space Mono, 'Courier New', Courier, monospace; */
-    padding-top: 20vh;
-    align-items: center;
-    margin: 5vh;
-    height: 100vh;
+
+ #main-content { 
+        height: 200vh;
+        width: 65vw;
+        padding-top: 8vh;
+        margin-left: 25px;
 }
 
-article {
+#title { 
+    font-size: 2rem;
+}
+
+#title, article {
     margin: 5vh auto;
-    border-bottom: 2px solid;
     padding: 25px;
 }
 
-#content h2 {
-    padding-bottom: 5vh;
-    text-align: center;
+footer { 
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(144, 0, 168, 0.9);
+    width: 100%;
+    left: 0;
 }
-
-#content p:first-of-type {
-    padding-bottom: 2vh;
-}
-
-@media screen and (max-width: 480px) {
-    
-}
-
 
 </style>
 </head>
 <body>
-        <header>
-    <div class="logo"> <!--Logo-->
+    <header>
+        <h1 id="top-title-text">Dev.ADJ</h1>
+    </header>
+    <aside>
+        <div class="adj-logo"> <!--Logo-->
         <div class="logo-container">
-           <img class="adj-logo" src="/assets/adjlogos/ADJLogoWhite-small.png" />
+           <img src="/assets/adjlogos/ADJLogoWhite-small.png" />
         </div>
     </div>
 
      <!--Navigation (TBD whether on top or side)-->
         <nav class="navbar">
             <ul>
-                <li><a class="nav-link" href="/index.html">Home</a></li>
-                <li><a class="nav-link" href="/pages/projects/projects.html">Projects</a></li>
-                <li><a class="nav-link" href="/pages/musings/musings.html">Musings</a></li>
+                <li><a class="nav-link tab-link" href="/index.html">Welcome</a></li>
+                <li><a class="nav-link tab-link" href="/pages/about/about.html">About</a></li>
+                <li><a class="nav-link tab-link" href="/pages/musings/musings.html">Musings</a></li>
+                <li><a class="nav-link tab-link" href="/pages/projects/projects.html">Projects</a></li>
+                <li><a class="nav-link tab-link" href="/pages/log/log.html">Log</a></li>
             </ul>
         </nav>
-    <h1 id="top-title-text">Dev.ADJ</h1>
-    </header>
-    <section id="content">
+
+
+    <div class="links">
+        <p>I'm not much of a social media guy, so check these out?</p>
+        <a href="https://github.com/andredudley" target="_blank"><span class="logo fa fa-github fa-2x"></span></a>
+        <a href="https://www.linkedin.com/in/andre-dudley-jr/" target="_blank"><span class="logo fa fa-linkedin"></span></a>    
+    </div>
+    </aside>
+    <main id="main-content">
         <h2 id="title">Log</h2>
     <!--Inaugural Log-->
     <article class="logs" id="first-log">
@@ -83,14 +91,18 @@ article {
         Anyways, the "Check Out What's Up" button should take you to whatever is "up" now. Pretty neat.
     </p>
     </article>
-    </section>
+
+    <article class="logs" id="third-log">
+        <h3>Design Changes</h3>
+        <p>Logged on <time datetime="2026-01-30">February 2, 2026</time></p> 
+    <p>Alright, I'm back guys.</p>
+    <p>
+        CSS is a real kick in the head. That's it. That's the post.
+    </p>
+    </article>
+    </main>
     <footer> <!--Footer/Contact-->
     <p id="copy">&copy; 2026 Dev.ADJ</p>
-    <div class="links">
-        <p>I'm not much of a social media guy, so check these out if you can.</p>
-        <a href="https://github.com/andredudley" target="_blank"><span class="logo fa fa-github fa-2x"></span></a>
-        <a href="https://www.linkedin.com/in/andre-dudley-jr/" target="_blank"><span class="logo fa fa-linkedin"></span></a>    
-    </div>
     <p id="daily-message">You are Loved &#10014;</p>
     <script src="/scripts/daily-bread.js"></script>
    </footer>

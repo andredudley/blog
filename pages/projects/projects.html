@@ -11,7 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 <style>
     .main-content {
-        padding-top: 0vh;
+        height: 200vh;
+        padding-bottom: 50vh;
     }
 
     .welcome {
@@ -73,8 +74,12 @@
     }
 
     footer { 
-        margin: 0 auto;
-    }
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(144, 0, 168, 0.9);
+    width: 100%;
+    left: 0;
+}
 
     @media screen and (max-width: 768px) {
         .main-content {
@@ -102,24 +107,34 @@
 </style>
 </head>
 <body>
-        <header>
-    <div class="logo"> <!--Logo-->
+       <header>
+    <h1 id="top-title-text">Dev.ADJ</h1>
+    </header>
+    <aside>
+        <div class="adj-logo"> <!--Logo-->
         <div class="logo-container">
-           <img class="adj-logo" src="/assets/adjlogos/ADJLogoWhite-small.png" />
+           <img src="/assets/adjlogos/ADJLogoWhite-small.png" />
         </div>
     </div>
 
+     <!--Navigation (TBD whether on top or side)-->
         <nav class="navbar">
             <ul>
-                <li><a class="nav-link" href="/index.html">Home</a></li>
-                <li><a class="nav-link" href="/pages/log/log.html">Log</a></li>
-                <li><a class="nav-link" href="/pages/musings/musings.html">Musings</a></li>
+                <li><a class="nav-link tab-link" href="/index.html">Welcome</a></li>
+                <li><a class="nav-link tab-link" href="/pages/about/about.html">About</a></li>
+                <li><a class="nav-link tab-link" href="/pages/musings/musings.html">Musings</a></li>
+                <li><a class="nav-link tab-link" href="/pages/projects/projects.html">Projects</a></li>
+                <li><a class="nav-link tab-link" href="/pages/log/log.html">Log</a></li>
             </ul>
         </nav>
-    <h1 id="top-title-text">Dev.ADJ</h1>
-    </header>
 
-    <section class="main-content">
+    <div class="links">
+        <p>I'm not much of a social media guy, so check these out?</p>
+        <a href="https://github.com/andredudley" target="_blank"><span class="logo fa fa-github fa-2x"></span></a>
+        <a href="https://www.linkedin.com/in/andre-dudley-jr/" target="_blank"><span class="logo fa fa-linkedin"></span></a>    
+    </div>
+    </aside>
+        <main class="main-content">
         <section id="welcome" class="welcome">
         <h1>Things I've Made</h1>
         <p>A collection of projects I have made, and how I made them.</p>
@@ -144,13 +159,9 @@
             <p>Just give it time! You can even check the github to view the progress!</p>
             </section>
         </section>
-        <footer> <!--Footer/Contact-->
+        </main>
+    <footer> <!--Footer/Contact-->
     <p id="copy">&copy; 2026 Dev.ADJ</p>
-    <div class="links">
-        <p>I'm not much of a social media guy, so check these out if you can.</p>
-        <a href="https://github.com/andredudley" target="_blank"><span class="logo fa fa-github fa-2x"></span></a>
-        <a href="https://www.linkedin.com/in/andre-dudley-jr/" target="_blank"><span class="logo fa fa-linkedin"></span></a>    
-    </div>
     <p id="daily-message">You are Loved &#10014;</p>
     <script src="/scripts/daily-bread.js"></script>
    </footer>

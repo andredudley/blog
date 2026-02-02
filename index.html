@@ -13,28 +13,37 @@
 </head>
 <body>
     <header>
-    <div class="logo"> <!--Logo-->
+    <h1 id="top-title-text">Dev.ADJ</h1>
+    </header>
+    <aside>
+        <div class="adj-logo"> <!--Logo-->
         <div class="logo-container">
-           <img class="adj-logo" src="/assets/adjlogos/ADJLogoWhite-small.png" />
+           <img src="/assets/adjlogos/ADJLogoWhite-small.png" />
         </div>
     </div>
 
      <!--Navigation (TBD whether on top or side)-->
         <nav class="navbar">
             <ul>
-                <li><a class="nav-link" href="/pages/about/about.html">About</a></li>
-                <li><a class="nav-link" href="/pages/projects/projects.html">Projects</a></li>
-                <li><a class="nav-link" href="/pages/log/log.html">Log</a></li>
-                <li><a class="nav-link" href="/pages/musings/musings.html">Musings</a></li>
+                <li><a class="nav-link tab-link" href="#welcome">Welcome</a></li>
+                <li><a class="nav-link tab-link" href="#about">About</a></li>
+                <li><a class="nav-link tab-link" href="#musings">Musings</a></li>
+                <li><a class="nav-link tab-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link tab-link" href="#log">Log</a></li>
             </ul>
         </nav>
-    <h1 id="top-title-text">Dev.ADJ</h1>
-    </header>
+    </div>
 
+    <div class="links">
+        <p>I'm not much of a social media guy, so check these out?</p>
+        <a href="https://github.com/andredudley" target="_blank"><span class="logo fa fa-github fa-2x"></span></a>
+        <a href="https://www.linkedin.com/in/andre-dudley-jr/" target="_blank"><span class="logo fa fa-linkedin"></span></a>    
+    </div>
+    </aside>
     <main class="main-content"> <!--Separates header content from main content on page-->
-    <section class="hero"> <!--Hero Section-->
+    <section class="content-section" id="welcome"> <!--Hero Section-->
         <h2>Welcome!</h2>
-        <p>I'm ADJ. <br/> Nothing <i>too</i> crazy, just a web dev trying his best, and documenting the journey from concept to code. 
+        <p>I'm ADJ. <br/> Nothing <strong>too</strong> crazy, just a web dev trying his best, and documenting the journey from concept to code. 
             Consider this an open-source notebook, or my descent into CSS-induced insanity. 
             <br /> Maybe both?</p>
         <div class="cta-container"> <!--cta container and button-->
@@ -43,37 +52,48 @@
         <script src="/scripts/latest-btn.js"></script>
     </section>
 
+    <section class="content-section" id="about"> <!--about-->
+        <h2>Who is ADJ?</h2>
+        <p>
+            My name is Andre Dudley Jr.&mdash;the "ADJ" in question. 
+            I'm a web developer, and an alumnus of Albany State University with a degree in Computer Science.
+        </p>
+        <p>
+            I'm also a sucker for sports, gaming, and theology. Regular guy stuff, I suppose.
+        </p>
+        <a class="view-btn" id="learn-more" href="/pages/about/about.html">Learn More</a>
+    </section>
     
-    <section class="musings"> <!--musings-->
+    <section class="content-section" id="musings"> <!--musings-->
         <h2>Recent Musings</h2>
         <p>Thoughts between the lines (of code). Or just me yapping about things I like/dislike.</p>
-        <a class="view-btn" id="musings" href="/pages/musings/musings.html">View Musings</a>
+        <div class="btn-container">
+        <a class="view-btn" id="musings-btn" href="/pages/musings/musings.html">View Musings</a>
+        </div>
     </section>
 
-    <div class="log-pro-section"> <!--Separate log and projects for styling-->
-    <section class="log"> <!--log-->
+    <section class="content-section" id="log"> <!--log-->
         <h2>From The Log</h2>
         <p>Tune in for concepts, updates, or me losing my marbles.</p>
-        <a class="view-btn" id="log" href="/pages/log/log.html">View Log</a>
+        <div class="btn-container">
+        <a class="view-btn" id="log-btn" href="/pages/log/log.html">View Log</a>
+        </div>
     </section>
 
           
-    <section class="projects"> <!--projects-->
+    <section class="content-section" id="projects"> <!--projects-->
         <h2>Stuff I've Done</h2>
         <p>Want to see what I've made? Come see the processes, steps taken, and mistakes made.</p>
         <a href="/pages/projects/projects.html">CSS Technical Document (In The Works)</a>
-        <a class="view-btn" id="projects" href="/pages/projects/projects.html">View Projects</a>
+        <div class="btn-container">
+        <a class="view-btn" id="projects-btn" href="/pages/projects/projects.html">View Projects</a>
+        </div>
     </section>
     </div>
     </main>
-
+    <script src="/scripts/pagenav.js"></script>
     <footer> <!--Footer/Contact-->
     <p id="copy">&copy; 2026 Dev.ADJ</p>
-    <div class="links">
-        <p>I'm not much of a social media guy, so check these out if you can.</p>
-        <a href="https://github.com/andredudley" target="_blank"><span class="logo fa fa-github fa-2x"></span></a>
-        <a href="https://www.linkedin.com/in/andre-dudley-jr/" target="_blank"><span class="logo fa fa-linkedin"></span></a>    
-    </div>
     <p id="daily-message">You are Loved &#10014;</p>
     <script src="/scripts/daily-bread.js"></script>
    </footer>
