@@ -205,6 +205,8 @@ footer {
 
 /*RESPONSIVE BREAKPOINTS (genuinely hate it here)*/
 
+
+
 /*Tablet breakpoint (768px and below)*/
 @media screen and (max-width: 768px) {
     body {
@@ -313,10 +315,10 @@ footer {
     
     main {
         position: relative;
-        left: 0;
+        left: -2.5vw;
         width: 100%;
         padding: 0 15px;
-        margin-top: 20px;
+        margin: 20px auto;
         order: 2; /*This ensures main comes before aside*/
     }
     
@@ -336,8 +338,8 @@ footer {
     
     .main-content p {
         font-size: 16px;
-        text-align: justify;
-        margin-bottom: 25px;
+        text-align: center;
+        margin: 25px auto;
         word-wrap: break-word;
     }
     
@@ -377,12 +379,20 @@ footer {
     
     .cta-btn {
         padding: 12px 25px;
-        font-size: 16px;
+        font-size: 22px;
         width: 80%;
         max-width: 250px;
         text-align: center;
         margin: 20px auto;
         display: block;
+    }
+
+    .view-btn { 
+        margin: 20px auto;
+        display: block;
+        max-width: 250px; 
+        width: 75%;
+        text-align: center;
     }
     
     /*Mobile navbar*/
@@ -457,6 +467,7 @@ footer {
         width: 85vw;
         min-width: 180px;
         font-size: 14px;
+        margin: auto;
     }
     
     .cta-btn {

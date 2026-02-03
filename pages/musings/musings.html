@@ -31,21 +31,18 @@
         width: 67vw;
     }
 
-    footer { 
-        position: fixed;
-        bottom: 0;
-        background-color: rgba(144, 0, 168, 0.9);
-        width: 100%;
-        left: 0;
-    }
-
-    @media screen and (max-width: 480px) {
-        .welcome { 
-            margin-top: 35vh;
+    @media screen and (max-width: 576px) {
+        #welcome { 
+         margin-top: 0;
         }
 
         .musing-container {
-            height: 15vh;
+            height: 55vh;
+        }
+
+        footer { 
+            position: static;
+            bottom: 0;
         }
     }
 </style>
