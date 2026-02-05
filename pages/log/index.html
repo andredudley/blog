@@ -14,6 +14,9 @@
 <body>
     <header>
         <h1 id="top-title-text">Dev.ADJ</h1>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <i class="fa fa-bars"></i>
+        </button>
     </header>
     <aside>
         <div class="adj-logo"> <!--Logo-->
@@ -99,5 +102,15 @@
     <p id="daily-message">You are Loved &#10014;</p>
     <script src="../../scripts/daily-bread.js"></script>
    </footer>
+
+      <!--JS for hamburger menu-->
+   <script>
+  const toggleBtn = document.querySelector(".menu-toggle");
+  const sidebar = document.querySelector("aside");
+
+  toggleBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("open");
+  });
+</script>
 </body>
 </html>
