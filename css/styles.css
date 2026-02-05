@@ -15,6 +15,8 @@ header {
     top: 0;
     left: 0;
     background-color: rgba(144, 0, 168, 0.9);
+    padding: 0.5rem 1rem;
+    height: 70px;
     z-index: 10;
 }
 
@@ -36,12 +38,12 @@ body {
 
 aside { 
     grid-area: aside;
-    height: 100vh;
+    height: calc(100vh - 70px);
     background-color: rgba(119, 0, 139, 0.99);
     width: 20vw;
     position: fixed;
     left: 0;
-    top: 13.5vh;
+    top: 70px;
     justify-content: center;
     z-index: 10;
 }
@@ -120,7 +122,6 @@ footer {
     text-align: left;
     line-height: 2.2rem;
     margin: 10vh auto;
-    display: column;
     justify-content: center;
     align-items: center;
 }
