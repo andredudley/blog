@@ -2,9 +2,9 @@
 document.addEventListener('DOMContentLoaded', function() { 
   const LATEST_POST = {
     url: "/log/",  
-    title: "Updated CTA Button",               
-    date: "2026-1-30",                       
-    description: "Updated my CTA button to go to newest update. Pretty cool."
+    title: "It Works",               
+    date: "2026-2-09",                       
+    description: "We are SO back, brother."
   };
   
   // Find and update CTA buttons
