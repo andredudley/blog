@@ -1,6 +1,7 @@
 ---
 title: And Now... WE. ARE. LIVE.
-date: 2026-02-02
+displayDate: 2026-02-04
+date: 2026-02-04
 tags: log
 permalink: false
 ---

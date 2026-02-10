@@ -1,5 +1,6 @@
 ---
 title: 11ty Is Truly A Go
+displayDate: 2026-02-10
 date: 2026-02-10
 tags: log
 permalink: false

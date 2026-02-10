@@ -1,5 +1,6 @@
 ---
 title: Welp.
+displayDate: 2026-02-10
 date: 2026-02-10
 tags: log
 permalink: false

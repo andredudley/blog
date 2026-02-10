@@ -1,5 +1,6 @@
 ---
 title: Updated CTA Button
+displayDate: 2026-01-30
 date: 2026-01-30
 tags: log
 permalink: false

@@ -1,5 +1,6 @@
 ---
 title: First Ever Log
+displayDate: 2026-01-27
 date: 2026-01-27
 tags: log
 permalink: false

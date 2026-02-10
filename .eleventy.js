@@ -2,21 +2,14 @@ const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
 
-  // Views date (YYY-MM-DD) as local time instead of UTC 
-  eleventyConfig.addGlobalData("eleventyComputed", {
-    date: data => {
-      if (typeof data.date === "string" && /^\d{4}-\d{2}-\d{2}$/.test(data.date)) {
-        return DateTime.fromISO(data.date, { zone: "local" }).toJSDate();
-      }
-      return data.date;
+  // Date filter (safe, no timezone shift for displayDate)
+  eleventyConfig.addFilter("postDate", (dateInput, format = "MMMM d, yyyy") => {
+    if (typeof dateInput === "string") {
+      return DateTime.fromISO(dateInput).toFormat(format);
     }
+    return DateTime.fromJSDate(dateInput, { zone: "local" }).toFormat(format);
   });
-
-  // Add date filter for Nunjucks
-  eleventyConfig.addFilter("postDate", (dateObj, format = "MMMM d, yyyy") => {
-    return DateTime.fromJSDate(dateObj).toFormat(format);
-  });
-  // Copy your existing static site files through to log
+  // Copy your existing static site files through to _site
   eleventyConfig.addPassthroughCopy("index.html");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("assets");
