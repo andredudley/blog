@@ -2,6 +2,7 @@
 title: Design Changes
 date: 2026-02-02
 tags: log
+permalink: false
 ---
 
 Alright, I'm back guys.

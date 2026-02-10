@@ -2,6 +2,7 @@
 title: First Ever Log
 date: 2026-01-27
 tags: log
+permalink: false
 ---
 
 Hello? This thing on? Hallelujah, it works!
