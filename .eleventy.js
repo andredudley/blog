@@ -1,7 +1,6 @@
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
-<<<<<<< HEAD
 
   // Date filter (safe, no timezone shift for displayDate)
   eleventyConfig.addFilter("postDate", (dateInput, format = "MMMM d, yyyy") => {
@@ -16,18 +15,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("scripts");
   eleventyConfig.addPassthroughCopy("pages"); // if other static pages exist
-=======
-  eleventyConfig.addFilter("postDate", (dateObj, format = "MMMM d, yyyy") => {
-    return DateTime
-      .fromJSDate(dateObj, { zone: "utc" }) // treat input as UTC
-      .toLocal()                            // convert to est
-      .toFormat(format);
-  });
-};
-
-
-
->>>>>>> parent of 40a0075 (more fixes for log dates)
 
   return {
     dir: {
@@ -36,3 +23,4 @@ module.exports = function(eleventyConfig) {
       output: "log"
     }
   };
+};
