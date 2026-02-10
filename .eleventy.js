@@ -1,14 +1,14 @@
 const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
-
-  // Date filter (fixes the one-day-off bug)
   eleventyConfig.addFilter("postDate", (dateObj, format = "MMMM d, yyyy") => {
     return DateTime
-      .fromJSDate(dateObj, { zone: "utc" })
-      .toLocal()
+      .fromJSDate(dateObj, { zone: "utc" }) // treat input as UTC
+      .toLocal()                            // convert to your local time
       .toFormat(format);
   });
+};
+
 
 
 
@@ -19,4 +19,3 @@ module.exports = function(eleventyConfig) {
       output: "log"
     }
   };
-};
