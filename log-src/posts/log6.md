@@ -3,7 +3,6 @@ title: Enter 11ty.
 displayDate: 2026-02-09
 date: 2026-02-09
 tags: log
-permalink: false
 ---
 
 And, here it is... my first ever blog post using 11ty. It's real neat stuff when you get the hang of it.
