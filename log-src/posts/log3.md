@@ -1,8 +1,8 @@
 ---
 title: Design Changes
-displayDate: 2026-02-02
-date: 2026-02-02
+date: 2026-02-02T12:00:00
 tags: log
+permalink: false
 ---
 
 Alright, I'm back guys.

@@ -1,8 +1,8 @@
 ---
 title: First Ever Log
-displayDate: 2026-01-27
-date: 2026-01-27
+date: 2026-01-27T12:00:00
 tags: log
+permalink: false
 ---
 
 Hello? This thing on? Hallelujah, it works!

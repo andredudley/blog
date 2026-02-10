@@ -1,7 +1,6 @@
 ---
 title: Enter 11ty. Another Test.
-displayDate: 2026-02-09
-date: 2026-02-09
+date: 2026-02-09T12:00:00
 tags: log
 permalink: false
 ---

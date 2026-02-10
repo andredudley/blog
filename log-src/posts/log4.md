@@ -1,8 +1,8 @@
 ---
 title: Genuinely Losing My Marbles
-displayDate: 2026-02-03
-date: 2026-02-03
+date: 2026-02-03T12:00:00
 tags: log
+permalink: false
 ---
 
 

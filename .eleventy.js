@@ -2,12 +2,11 @@ const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
 
-  // Date filter (safe, no timezone shift for displayDate)
-  eleventyConfig.addFilter("postDate", (dateInput, format = "MMMM d, yyyy") => {
-    if (typeof dateInput === "string") {
-      return DateTime.fromISO(dateInput).toFormat(format);
-    }
-    return DateTime.fromJSDate(dateInput, { zone: "local" }).toFormat(format);
+  // Simple date display filter (fixes "day before" in most US timezones)
+  eleventyConfig.addFilter("postDate", (dateObj, format = "MMMM d, yyyy") => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" })
+      .toLocal()
+      .toFormat(format);
   });
   // Copy your existing static site files through to _site
   eleventyConfig.addPassthroughCopy("index.html");
